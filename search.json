@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "NOAA quarto simple with R",
+    "title": "Math 378 Final project",
     "section": "",
     "text": "Hi there, it’s Michaela Kovalsky! Welcome to my Math 378 Final Project.",
     "crumbs": [
@@ -107,16 +107,6 @@
     "text": "Add your pages the project\n\nAdd the files to _quarto.yml",
     "crumbs": [
       "Add content"
-    ]
-  },
-  {
-    "objectID": "content/acknowledgements.html",
-    "href": "content/acknowledgements.html",
-    "title": "Acknowledgments",
-    "section": "",
-    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland.",
-    "crumbs": [
-      "Acknowledgements"
     ]
   },
   {
