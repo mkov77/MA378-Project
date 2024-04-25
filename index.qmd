@@ -1,6 +1,6 @@
 ---
-title: "NOAA quarto simple with R"
-subtitle: "A simple Quarto webpage with a book layout"
+title: "Math 378 Final project"
+subtitle: "Michaela Kovalsky"
 page-layout: full
 ---
 
