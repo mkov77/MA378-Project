@@ -5,3 +5,4 @@ page-layout: full
 ---
 
 Hi there, it's Michaela Kovalsky! Welcome to my Math 378 Final Project.
+![DevOps Puppies by DallE](devOpsPuppies.jpg)
