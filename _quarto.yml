@@ -3,9 +3,9 @@ project:
 
 website: 
   page-navigation: true
-  title: "NOAA quarto simple" 
-  site-url: "https://nmfs-opensci.github.io/NOAA-quarto-simple" 
-  repo-url: "https://github.com/nmfs-opensci/NOAA-quarto-simple"
+  title: "MA378" 
+  site-url: "https://mkov77.github.io/MA378-Project" 
+  repo-url: "https://github.com/mkov77/MA378-Project"
   repo-actions: [edit, source, issue]
   favicon: images/favicon.ico
   
