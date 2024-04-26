@@ -22,10 +22,10 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      - href: content/customizing.qmd
-        text: Model
       - href: content/code.qmd
         text: Penguins EDA
+      - href: content/model.qmd
+        text: Model
 
 format:
   html:

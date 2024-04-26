@@ -11,13 +11,24 @@ format:
 suppressPackageStartupMessages({
 library(palmerpenguins)
 library(dplyr)
+library(dbplyr)
 library(ggplot2) 
+library(DBI)
+library(duckdb)
 })
 
-df <- palmerpenguins::penguins
+if (exists("con")) {
+  DBI::dbDisconnect(con)
+}
+
+con <- DBI::dbConnect(
+  duckdb::duckdb(), 
+  dbdir = "my-db.duckdb"
+  )
+df <- dplyr::tbl(con, "penguins")
 ```
 
-```{r, warning=FALSE}
+```{r, warning=FALSE, message=FALSE}
 df %>%
   group_by(species, sex) %>%
   summarise(
@@ -32,9 +43,14 @@ df %>%
 
 ## Penguin Size vs Mass by Species
 
-```{r, warning=FALSE}
+```{r, warning=FALSE, message=FALSE}
 df %>%
   ggplot(aes(x = bill_length_mm, y = body_mass_g, color = species)) +
   geom_point() + 
   geom_smooth(method = "lm")
 ```
+
+```{r}
+DBI::dbDisconnect(con)
+```
+
